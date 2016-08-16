@@ -13,6 +13,8 @@ import CoreLocation
 class ViewController: UIViewController {
     
     @IBOutlet weak var mapView: MKMapView!
+    
+    
     let locateManage = CLLocationManager()
     
     
@@ -55,6 +57,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetail"{
             let name = sender as! String
@@ -62,7 +65,6 @@ class ViewController: UIViewController {
             destinationViewController.titleText = name
             destinationViewController.annotationImage = UIImage(named: name)
         }
-        
         
     }
 }
