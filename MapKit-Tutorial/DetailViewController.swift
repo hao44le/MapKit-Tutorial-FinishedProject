@@ -15,6 +15,7 @@ class DetailViewController: UIViewController {
     
     var titleText : String!
     var annotationImage : UIImage!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.nameLabel.text = self.titleText
