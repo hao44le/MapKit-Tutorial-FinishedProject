@@ -6,9 +6,8 @@
 //  Copyright © 2016 Gelei Chen. All rights reserved.
 //
 
-import UIKit
-import CoreLocation
 import MapKit
+
 class Annotation: NSObject, MKAnnotation {
     var coordinate: CLLocationCoordinate2D
     var title: String?
